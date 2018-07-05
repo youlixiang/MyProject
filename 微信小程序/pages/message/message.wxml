@@ -1,0 +1,36 @@
+<navigator bindtap='aabbcc' url='/pages/detail/detail'>
+<view class='xx_top'>
+  <text class='xx_top_1'>我是标题</text>
+  <text class='xx_top_2'>2018-6-17</text>
+  <image src='https://img1.360buyimg.com/da/jfs/t21172/264/1255665518/172625/54d8fca6/5b238a87N2d3b75f7.jpg!cr_1125x549_0_72'></image>
+  <text class='xx_top_3'>越努力，越幸运~~</text>
+  <text class='xx_top_4 arrow'>查看详情</text>
+</view>
+</navigator>
+<navigator bindtap='aabbcc' url='/pages/detail/detail'>
+<view class='xx_top'>
+  <text class='xx_top_1'>我是标题</text>
+  <text class='xx_top_2'>2018-6-17</text>
+  <image src='https://img1.360buyimg.com/da/jfs/t20914/99/1314535154/159509/98ab522a/5b25dcb9Nd368d8e4.jpg!cr_1125x549_0_72'></image>
+  <text class='xx_top_3'>越努力，越幸运~~</text>
+  <text class='xx_top_4 arrow'>查看详情</text>
+</view>
+</navigator>
+<navigator bindtap='aabbcc' url='/pages/detail/detail'>
+<view class='xx_top'>
+  <text class='xx_top_1'>我是标题</text>
+  <text class='xx_top_2'>2018-6-17</text>
+  <image src='https://img1.360buyimg.com/da/jfs/t21172/264/1255665518/172625/54d8fca6/5b238a87N2d3b75f7.jpg!cr_1125x549_0_72'></image>
+  <text class='xx_top_3'>越努力，越幸运~~</text>
+  <text class='xx_top_4 arrow'>查看详情</text>
+</view>
+</navigator>
+<navigator bindtap='aabbcc' url='/pages/detail/detail'>
+<view class='xx_top'>
+  <text class='xx_top_1'>我是标题</text>
+  <text class='xx_top_2'>2018-6-17</text>
+  <image src='https://img1.360buyimg.com/da/jfs/t20914/99/1314535154/159509/98ab522a/5b25dcb9Nd368d8e4.jpg!cr_1125x549_0_72'></image>
+  <text class='xx_top_3'>越努力，越幸运~~</text>
+  <text class='xx_top_4 arrow'>查看详情</text>
+</view>
+</navigator>

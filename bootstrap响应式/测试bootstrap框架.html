@@ -1,0 +1,296 @@
+<!--导航-->
+<nav class="navbar navbar-default container">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><b>微金所</b></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">我要投资 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">我要借贷</a></li>
+                <li><a href="#">平台介绍</a></li>
+                <li><a href="#">新手专区</a></li>
+                <li><a href="#">最新动态</a></li>
+                <li><a href="#">微平台</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">个人中心</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    <!--轮播图-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/slide_01_2000x410.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="images/slide_02_2000x410.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="images/slide_03_2000x410.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="images/slide_04_2000x410.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+    <!--信息-->
+    <div class="message_son">
+        <div class="message">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <p>银联支付全称保证支付安全</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <p>银联支付全称保证支付安全</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <p>银联支付全称保证支付安全</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <p>银联支付全称保证支付安全</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <p>银联支付全称保证支付安全</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <p>银联支付全称保证支付安全</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--预约-->
+    <div class="container_booking">
+        <div class="booking">
+            <div class="booking_l">
+                <p></p>
+            </div>
+            <div class="booking_r">
+                <p id="p_auto">现在有 273 人在排队，累计预约交易成功 7571 次。 什么是预约投标？ 立即预约</p>
+            </div>
+            <div class="booking_c">
+                <p>微金所企业宣传片</p>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+CSS
+<!--导航-->
+.navbar-default,
+.navbar-default li {
+/*background-color: #f8f8f8;*/
+/*border-color: #e7e7e7;*/
+height: 79px;
+background-color: #fff;
+border: none;
+}
+.navbar-default {
+height: 80px;
+border-bottom: 1px solid #ccc;
+}
+.container-fluid li a {
+line-height: 43px;
+height: 79px;
+}
+.navbar-brand {
+height: 80px;
+line-height: 47px;
+width: 200px;
+text-align: right;
+font-size: 25px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+color: #555;
+background-color: #fff;
+border-bottom: 3px solid red;
+}
+.navbar-nav li:hover {
+border-bottom: 3px solid red;
+}
+.navbar-right li {
+width: 86px;
+}
+@media (max-width: 860px) {
+.navbar-right li {
+display: none;
+}
+}
+@media (max-width: 746px) {
+.navbar-right li {
+display: block;
+}
+.navbar-brand {
+/*width: 105px;*/
+}
+}
+
+<!--轮播图-->
+.carousel {
+width: 100%;
+/*height: 410px;*/
+}
+.carousel .carousel-inner div img {
+width: 100%;
+/*height: 410px;*/
+}
+
+<!--信息-->
+.message .row div {
+height: 90px;
+}
+.message {
+width: 900px;
+margin: 0 auto;
+height: 180px;
+}
+.message_son {
+width: 100%;
+height: 180px;
+border-bottom: 1px solid #ccc;
+border-top: 1px solid #ccc;
+margin-top: 10px;
+}
+.message .row {
+/*text-align: center;*/
+}
+.message .row p {
+
+}
+.message .row p,
+.message .row h4 {
+padding-top: 15px;
+padding-left: 62px;
+}
+@media (max-width: 991px) {
+.message_son {
+height: 283px;
+}
+}
+
+<!--预约-->
+.container_booking {
+width: 100%;
+height: 110px;
+border-bottom: 1px solid #ccc;
+}
+.booking {
+width: 900px;
+height: 110px;
+margin: 0 auto;
+font-size: 14px;
+}
+.booking_r {
+width: 526px;
+height: 28px;
+float: left;
+margin-top: 40px;
+}
+.booking_c {
+width: 136px;
+height: 28px;
+float: right;
+padding-top: 40px;
+}
+@media (max-width: 991px) {
+.booking {
+width: 750px;
+}
+}
+/*@media (max-width: 766px) {*/
+/*.booking_r*/
+/*{*/
+/*padding-left: 23px;*/
+/*}*/
+/*}*/
+/*产品*/
+.container_line {
+width: 100%;
+height: 404px;
+margin-top: 10px;
+}
+.line {
+width: 1200px;
+height: 404px;
+margin: 0 auto;
+}
+/*.container_line .line .row div {*/
+/*border: 1px solid red;*/
+/*height: 180px;*/
+/*}*/
+.nav-tabs li,
+.nav-tabs .active,
+.nav-tabs .active a
+{
+height: 44px;
+padding-left: 13px;
+border: none;
+}
+.nav-tabs li a {
+/*line-height: 44px;*/
+}
+.line_top {
+width: 640px;
+}
+.nav-tabs {
+height: 60px;
+}
+.nav-tabs > li > a:hover {
+background-color: #fff;
+border: none;
+}
+#none_b {
+border: none;
+}
+@media (max-width: 991px) {
+.container_line,
+.line {
+width: 938px;
+}
+}
+@media (max-width: 750px) {
+.booking,
+.booking_r
+{
+width: 100%;
+}
+}
+.container {
+width: 100%;
+}
+@media (max-width: 928px) {
+.carousel-inner
+{
+width: 100%;
+}
+}
+/*.container_booking {*/
+/*width: 100%;*/
+/*}*/
+@media (max-width: 930px) {
+.container-fluid,
+#carousel-example-generic
+{
+width: 100%;
+}
+}

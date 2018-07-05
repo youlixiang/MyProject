@@ -1,0 +1,238 @@
+/*头部*/
+.toubu div {
+    height: 40px;
+    /*border-bottom: 1px solid #ccc;*/
+    border-right: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+}
+.toubu div button {
+    height: 23px;
+    line-height: 10px;
+}
+.toubu_son {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.toubu {
+    width: 100%;
+}
+.toubu div:last-child {
+    border-right: none;
+}
+/*媒体查询写法*/
+/*@media (max-width: 767px) {*/
+    /*.wjs_nav .navbar-nav .open .dropdown-menu > li > a {*/
+        /*color: #777;*/
+    /*}*/
+/*}*/
+
+/*-------------------------------------------------------------*/
+
+@media (max-width: 990px) {
+    .toubu_son
+    {
+        display: none;
+    }
+}
+@media (max-width: 766px) {
+    .message_son,
+    .booking_c
+    {
+        display: none;
+    }
+}
+/*导航*/
+.navbar-default,
+.navbar-default li {
+    /*background-color: #f8f8f8;*/
+    /*border-color: #e7e7e7;*/
+    height: 79px;
+    background-color: #fff;
+    border: none;
+}
+.navbar-default {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+.container-fluid li a {
+    line-height: 43px;
+    height: 79px;
+}
+.navbar-brand {
+    height: 80px;
+    line-height: 47px;
+    width: 200px;
+    text-align: right;
+    font-size: 25px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+    border-bottom: 3px solid red;
+}
+.navbar-nav li:hover {
+    border-bottom: 3px solid red;
+}
+.navbar-right li {
+    width: 86px;
+}
+@media (max-width: 860px) {
+    .navbar-right li {
+        display: none;
+    }
+}
+@media (max-width: 746px) {
+    .navbar-right li {
+        display: block;
+    }
+    .navbar-brand {
+        /*width: 105px;*/
+    }
+}
+/*轮播图*/
+.carousel {
+    width: 100%;
+    /*height: 410px;*/
+}
+.carousel .carousel-inner div img {
+    width: 100%;
+    /*height: 410px;*/
+}
+/*信息*/
+.message .row div {
+    height: 90px;
+}
+.message {
+    /*width: 900px;*/
+    margin: 0 auto;
+    height: 180px;
+}
+.message_son {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+.message .row {
+    /*text-align: center;*/
+}
+.row p,
+.message .row h4 {
+    padding-top: 15px;
+    padding-left: 62px;
+}
+@media (max-width: 991px) {
+    .message_son {
+        height: 283px;
+    }
+}
+/*预约*/
+.container_booking {
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid #ccc;
+}
+.booking {
+     /*width: 900px;*/
+     height: 110px;
+     margin: 0 auto;
+     font-size: 14px;
+ }
+.booking_r {
+    width: 526px;
+    height: 28px;
+    float: left;
+    margin-top: 40px;
+}
+.booking_c {
+    width: 136px;
+    height: 28px;
+    float: right;
+    padding-top: 40px;
+}
+@media (max-width: 991px) {
+    .booking {
+        width: 750px;
+    }
+}
+@media (max-width: 764px) {
+    .booking,
+    .container_booking
+    {
+        width: 100%;
+    }
+}
+/*@media (max-width: 766px) {*/
+    /*.booking_r*/
+    /*{*/
+        /*padding-left: 23px;*/
+    /*}*/
+/*}*/
+/*产品*/
+.container_line {
+    width: 100%;
+    height: 404px;
+    margin-top: 10px;
+}
+.line {
+    width: 1200px;
+    height: 404px;
+    margin: 0 auto;
+}
+/*.container_line .line .row div {*/
+    /*border: 1px solid red;*/
+    /*height: 180px;*/
+/*}*/
+.nav-tabs li,
+.nav-tabs .active,
+.nav-tabs .active a
+{
+    height: 44px;
+    padding-left: 13px;
+    border: none;
+}
+.nav-tabs li a {
+    /*line-height: 44px;*/
+}
+.line_top {
+    width: 640px;
+}
+.nav-tabs {
+    height: 60px;
+}
+.nav-tabs > li > a:hover {
+    background-color: #fff;
+    border: none;
+}
+#none_b {
+    border: none;
+}
+@media (max-width: 991px) {
+    .container_line,
+    .line {
+        width: 938px;
+    }
+}
+@media (max-width: 750px) {
+    .booking,
+    .booking_r
+    {
+        width: 100%;
+    }
+}
+.container {
+    width: 100%;
+}
+@media (max-width: 928px) {
+    .carousel-inner
+    {
+        width: 100%;
+    }
+}
+/*.container_booking {*/
+    /*width: 100%;*/
+/*}*/

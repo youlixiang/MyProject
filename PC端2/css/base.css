@@ -1,0 +1,316 @@
+@charset "utf-8";
+/**
+ * Description: base style 
+ * Developers: liuyt@yiqiao.com
+ **/
+/*reset  startminContent
+---------------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*A点击虚线*/
+a{ text-decoration:none; /*清除轮廓*/outline:none;}
+/*链接 a 在获得焦点的同时失去焦点。如果你用的是图片链接什么的，他不会显示周边的虚线。*/
+a:active {star:expression(this.onFocus=this.blur());}
+body {background-color:#fafbfc; font-size:12px;margin:0;padding:0;font-family:Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}/*sans-serif可以调用系统字体，保证字体能显示*/
+body,html{height:100%;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+header,
+footer,
+article,
+aside,
+section,
+nav,
+menu,
+hgroup,
+details,
+dialog,
+figure,
+figcaption{
+	display:block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+em,
+strong,
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var,
+i {
+  font-style: normal;
+  font-weight: normal;
+  /*取消浏览器最小字体显示*/
+  -webkit-text-size-adjust: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-size: 100%;
+	font-weight: normal;
+}
+li{
+	list-style: none;
+}
+fieldset,img{
+	border-width: 0;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+sup, 
+sub { 
+	vertical-align: baseline;
+}
+legend{
+	font-size: 0;
+	line-height: 0;
+	color: rgba(0,0,0,0);
+}
+input{
+	/*移动端清除点击高亮显示*/
+	background-color: transparent;
+	border-width: 0;
+	outline: none;
+	color: #333;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none !important;
+    margin: 0; 
+}
+input[type="number"]{
+	-moz-appearance:textfield;
+}
+input::-moz-placeholder { color: #bdbdbd; }
+input::-webkit-input-placeholder { color:#bdbdbd; }
+input:-ms-input-placeholder { color:#bdbdbd; }
+input::-ms-clear{display:none;}
+input[type="password"]::-ms-reveal{display:none;}
+/*reset end
+---------------------------------------------------------*/
+
+.content {
+	width: 1200px;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+}
+/*clear start
+清除浮动
+---------------------------------------------------------*/
+.clearFix:after {
+	content: "";
+	display: block;
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+/*IE专属的属性
+----------------------------------------------------------*/
+.clearFix{
+	zoom: 1;
+}
+
+/*clear  end
+---------------------------------------------------------*/
+/*显示隐藏  start
+---------------------------------------------------------*/
+.vh{visibility: hidden;}
+.vv{visibility: visible;}
+.none{display: none !important;}
+.block{display: block;}
+.hidden{overflow: hidden;}
+/*显示隐藏  end
+---------------------------------------------------------*/
+/*定位  start
+---------------------------------------------------------*/
+.pr{position: relative;}
+.pa{position: absolute;}
+.pf{position: fixed;}
+/*定位  end
+---------------------------------------------------------*/
+/*浮动  start
+---------------------------------------------------------*/
+.fl{float: left;}
+.fr{float: right;}
+.fl{float: left;}
+/*不是清除浮动！！！默认值：不浮动
+---------------------------------------------------------*/
+.fn{float: none;}
+/*浮动  end
+---------------------------------------------------------*/
+/*外边距  start
+---------------------------------------------------------*/
+.mCenter{margin: 0 auto;}
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.ml15{margin-left: 15px;}
+.ml20{margin-left: 20px;}
+.ml25{margin-left: 25px;}
+.ml30{margin-left: 30px;}
+.ml35{margin-left: 35px;}
+.ml40{margin-left: 40px;}
+.ml45{margin-left: 45px;}
+.ml50{margin-left: 50px;}
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+.mt25{margin-top: 25px;}
+.mt30{margin-top: 30px;}
+.mt35{margin-top: 35px;}
+.mt40{margin-top: 40px;}
+.mt45{margin-top: 45px;}
+.mt50{margin-top: 50px;}
+.mr5{margin-right: 5px;}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+.mr25{margin-right: 25px;}
+.mr30{margin-right: 30px;}
+.mr35{margin-right: 35px;}
+.mr40{margin-right: 40px;}
+.mr45{margin-right: 45px;}
+.mr50{margin-right: 50px;}
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb25{margin-bottom: 25px;}
+.mb30{margin-bottom: 30px;}
+.mb35{margin-bottom: 35px;}
+.mb40{margin-bottom: 40px;}
+.mb45{margin-bottom: 45px;}
+.mb50{margin-bottom: 50px;}
+.mb100{margin-bottom:100px;}
+/*外边距  end
+---------------------------------------------------------*/
+/*内边距  start
+---------------------------------------------------------*/
+.pt5{padding-top: 5px;}
+.pt10{padding-top: 10px;}
+.pt15{padding-top: 15px;}
+.pt20{padding-top: 20px;}
+.pt25{padding-top: 25px;}
+.pt30{padding-top: 30px;}
+.pt35{padding-top: 35px;}
+.pt40{padding-top: 40px;}
+.pt45{padding-top: 45px;}
+.pt50{padding-top: 50px;}
+.pr5{padding-right: 5px;}
+.pr10{padding-right: 10px;}
+.pr15{padding-right: 15px;}
+.pr20{padding-right: 20px;}
+.pr25{padding-right: 25px;}
+.pr30{padding-right: 30px;}
+.pr35{padding-right: 35px;}
+.pr40{padding-right: 40px;}
+.pr45{padding-right: 45px;}
+.pr50{padding-right: 50px;}
+.pb5{padding-bottom: 5px;}
+.pb10{padding-bottom: 10px;}
+.pb15{padding-bottom: 15px;}
+.pb20{padding-bottom: 20px;}
+.pb25{padding-bottom: 25px;}
+.pb30{padding-bottom: 30px;}
+.pb35{padding-bottom: 35px;}
+.pb40{padding-bottom: 40px;}
+.pb45{padding-bottom: 45px;}
+.pb50{padding-bottom: 50px;}
+.pl5{padding-left: 5px;}
+.pl10{padding-left: 10px;}
+.pl15{padding-left: 15px;}
+.pl20{padding-left: 20px;}
+.pl25{padding-left: 25px;}
+.pl30{padding-left: 30px;}
+.pl35{padding-left: 35px;}
+.pl40{padding-left: 45px;}
+.pl45{padding-left: 45px;}
+.pl50{padding-left: 50px;}
+/*内边距  end
+---------------------------------------------------------*/
+/*文本 start
+---------------------------------------------------------*/
+.tc{text-align: center;}
+.tr{text-align: right;}
+.tin0{text-indent:0 !important;}
+.fwb{font-weight: bold;}
+.fwn{font-weight: normal;}
+.lh1{line-height: 1;}
+.lh12{line-height: 1.2;}
+.lh14{line-height: 1.4;}
+.lh15{line-height: 1.5;}
+.lh18{line-height: 1.8;}
+.lh2{line-height: 2;}
+.lh22{line-height: 2.2;}
+.lh24{line-height: 2.4;}
+.lh25{line-height: 2.5;}
+.fn{
+	font-size: 0;
+	line-height: 0;
+	color: rgba(0,0,0,0);
+}
+.fz12{font-size: 12px;}
+.fz14{font-size: 14px;}
+.fz16{font-size: 16px;}
+.fz18{font-size: 18px;}
+.fz20{font-size: 20px;}
+.fz22{font-size: 22px;}
+.fz24{font-size: 24px;}
+.fz26{font-size: 26px;}
+.fz28{font-size: 28px;}
+.fz30{font-size: 30px;}
+.fz32{font-size: 32px;}
+
+
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*去掉a、input、button等点击的时候默认的蓝色的外边框和灰色的背景*/
+	-webkit-touch-callout: none; /*禁止长按a标签连接与图片弹出的菜单*/
+	-webkit-overflow-scrolling: touch; /*让页面的滚动条滚动的更加流畅*/
+	-webkit-text-size-adjust: 100%; /*关闭横竖屏切换或者缩放时候的字体大小自动的调整*/
+	/*-webkit-user-select: none; /!*禁止用户选中页面中的文字*!/*/
+	
+}
+
+/*去除input默认样式*/
+/*input {
+	-webkit-appearance: none;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+	-webkit-appearance: none;
+}*/
+em,i,b,span,strike,strong,s{ text-decoration: none; font-weight:normal; font-style:normal;}

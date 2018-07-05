@@ -1,0 +1,85 @@
+/*分类*/
+.wx_lbt image {
+  width: 100%;
+  height: 350rpx;
+}
+.index_nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.index_nav .nav_item {
+  width: 25%;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.index_nav image {
+  width: 80rpx;
+  height: 80rpx;
+}
+/*顶部搜索*/
+.wx_top {
+  width: 100%;
+  height: 60rpx;
+  background-color: #444;
+  color: #fff;
+  
+}
+.wx_top text:first-child {
+  line-height: 60rpx;
+  float: left;
+  width: 10%;
+}
+.wx_top text:last-child {
+  float: right;
+  line-height: 60rpx;
+  width: 10%;
+}
+.wx_top input {
+  float: left;
+  width: 80%;
+  height: 100%;
+  border-radius: 15px;
+  color: #fff;
+  background-color: greenyellow;
+}
+.zb_tp {
+  width: 90%;
+  height: 1000rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 15rpx;
+   position: relative;
+   margin-top: 30rpx;
+}
+.zb_tp image {
+  width: 100%;
+  height: 350rpx;
+  border-radius: 15rpx;
+}
+.zb_tp_2 {
+  color: #fff;
+  position: absolute;
+  top:300rpx;
+  right: 0;
+  font-size: 16px;
+}
+.zb_tp_3 {
+  font-size: 16px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15rpx;
+}
+.zb_tp_3 text {
+  margin-top: 10rpx;
+}
+.zb_tp_3 image {
+  width: 27%;
+  height: 110rpx;
+}

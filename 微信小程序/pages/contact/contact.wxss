@@ -1,0 +1,21 @@
+.gr_zl {
+  margin-top: 30rpx;
+  background-color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+.gr_zl view,
+.gr_zl1 view
+ {
+  width: 90%;
+  margin: 0 auto;
+}
+.gr_zl1 {
+    background-color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}

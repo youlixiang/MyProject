@@ -1,0 +1,142 @@
+/* 功能封装1：白色底色，间隔封装 */
+
+page {
+    background-color: #f1f1f1;
+}
+
+/* 
+    1.给page设置背景色，
+    2.给分区填充白色，
+    3.再通过margin隔开 
+*/
+
+.bgw {
+    background-color: #fff;
+}
+
+.mt20 {
+    margin-top: 20rpx;
+}
+
+/* 功能封装2：专门用于做间隔的类，设定高度，填充底色 */
+
+.divider {
+    height: 20rpx;
+    background-color: #f1f1f1;
+    box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, 0.1) inset;
+}
+
+/* 功能封装3：细线边框 */
+
+/* 移动端边框问题：右边框普通写法占位置，也容易"对不齐" */
+
+/* 解决办法：伪元素+定位 实现 */
+
+.bdr {
+    /* 2.3.子绝父相 */
+    position: relative;
+}
+
+.bdr::after {
+    /* 2.1.通过伪元素绘制一像素的右边框 */
+    content: "";
+    width: 1rpx;
+    height: 100%;
+    background-color: #ddd;
+    /* 2.2.定位，不占位置 */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* 功能封装4：箭头 */
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow::after {
+    content: "";
+    width: 15rpx;
+    height: 15rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;
+    transform: rotate(45deg);
+}
+
+/* 功能封装5：水平垂直居中 */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 功能封装6：列表封装 */
+
+.cell {
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.cell-item {
+    border-bottom: 1rpx solid #ddd;
+    padding: 20rpx 30rpx;
+}
+
+/* 功能封装7：星星评分封装 */
+
+.star-after {
+    color: #e2e2e2;
+}
+
+.star-before {
+    color: #f19e38;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    overflow: hidden;
+}
+
+/* 功能封装8：单行超出宽度变省略号 */
+
+.ell {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 功能封装9：加载更多样式 */
+
+.loadmore {
+    color: #888;
+    font-size: 16px;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.loadmore.loading::before {
+    content: '';
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: -10rpx;
+    margin-right: 10rpx;
+    display: inline-block;
+    vertical-align: middle;
+    animation: loading 1s steps(12) infinite;
+    background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;
+    background-size: 100%;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}

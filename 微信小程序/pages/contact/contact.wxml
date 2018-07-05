@@ -1,0 +1,21 @@
+<navigator class='gr_zl'>
+  <view class='arrow' bindtap="d">个人资料</view>
+</navigator>
+<navigator class='gr_zl1' bindtap="d">
+  <view class='arrow'>我的优惠券</view>
+</navigator>
+<navigator class='gr_zl' bindtap="d">
+  <view class='arrow'>常见问题</view>
+</navigator>
+<navigator class='gr_zl1' bindtap="d">
+  <view class='arrow'>使用条款</view>
+</navigator>
+<navigator class='gr_zl1' bindtap="d">
+  <view class='arrow'>联系我们</view>
+</navigator>
+<navigator class='gr_zl1' bindtap="d">
+  <view class='arrow'>还原设置</view>
+</navigator>
+<navigator class='gr_zl' bindtap="d">
+  <view class='arrow'>设置</view>
+</navigator>

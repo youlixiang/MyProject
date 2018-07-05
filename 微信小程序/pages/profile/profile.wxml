@@ -1,0 +1,26 @@
+<view class='wd_dl'>
+<text>用户登录</text>
+</view>
+<view class='wd_xz'>
+  <view class='wd_xz_z'><text>账号密码登录</text></view>
+  <view class='wd_xz_d'><text>短信验证码登录</text></view>
+</view>
+<view class='wd_sr'>
+<text>账号</text>
+ <input type="text" placeholder='用户名/邮箱/手机'/>  
+</view>
+<view class='wd_sr'>
+<text>密码</text>
+ <input type="text" placeholder='请输入密码'/>  
+</view>
+<view class='wd_dj' bindtap='b'>登录</view>
+<view class='wd_wj'>
+<text>忘记密码</text>
+<text class='wd_wj_r'>手机快速注册</text>
+</view>
+
+ 
+  <view class='wd_qt'>
+   <view class='wd_qt_q'>其他登录方式</view>
+   <view class='wd_qq'>QQ</view>
+</view>

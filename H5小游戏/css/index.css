@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.a {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #2d672d;
+    position: relative;
+    left: 30%;
+    top: 50px;
+}
+.a1 {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    position: absolute;
+    /*transition: all 2s;*/
+    border-radius: 50%;
+}
+/*.a4 {*/
+    /*animation: move 5s linear forwards;*/
+/*}*/
+/*@keyframes move {*/
+    /*0%{*/
+        /*left: 0;*/
+    /*}*/
+    /*100%{*/
+        /*left: 451px;*/
+    /*}*/
+/*}*/
+
+/*.a3 {*/
+    /*animation: move1 5s linear forwards;*/
+/*}*/
+/*@keyframes move1 {*/
+    /*0%{*/
+        /*top: 0;*/
+        /*left: 200px;*/
+    /*}*/
+    /*100%{*/
+        /*top: 451px;*/
+    /*}*/
+/*}*/
+
+/*游戏美化*/
+.play {
+    width: 505px;
+    height: 505px;
+    position: absolute;
+    left: 30%;
+    top: 50px;
+    background-color: #444;
+    z-index: 2;
+    display: none;
+}
+.play h1 {
+    color: #fff;
+}
+.play button {
+    width: 100%;
+    height: 50px;
+    background-color: #2aabd2;
+    font-size: 20px;
+}
+/*食物*/
+.food {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #2d672d;
+    top: 150px;
+    left: 150px;
+    border-radius: 50%;
+}

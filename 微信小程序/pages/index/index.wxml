@@ -1,0 +1,88 @@
+<!--顶部搜索  -->
+<!-- <view class='wx_top'>
+  <text>注册</text>
+   <input type="text" placeholder='搜索看看'/> 
+  <text>登录</text>
+</view> -->
+<!--轮播图-->
+<view class='wx_lbt' bindtap="a">
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+	 <swiper-item>
+      	 <image src="https://img1.360buyimg.com/da/jfs/t21172/264/1255665518/172625/54d8fca6/5b238a87N2d3b75f7.jpg!cr_1125x549_0_72"/> 
+  </swiper-item> 
+	<swiper-item>
+      	<image src="https://img1.360buyimg.com/da/jfs/t20914/99/1314535154/159509/98ab522a/5b25dcb9Nd368d8e4.jpg!cr_1125x549_0_72"/>
+  </swiper-item>
+  <swiper-item>
+      	 <image src="https://img1.360buyimg.com/da/jfs/t21172/264/1255665518/172625/54d8fca6/5b238a87N2d3b75f7.jpg!cr_1125x549_0_72"/> 
+  </swiper-item> 
+	<swiper-item>
+      	<image src="https://img1.360buyimg.com/da/jfs/t20914/99/1314535154/159509/98ab522a/5b25dcb9Nd368d8e4.jpg!cr_1125x549_0_72"/>
+  </swiper-item>
+  <swiper-item>
+      	 <image src="https://img1.360buyimg.com/da/jfs/t21172/264/1255665518/172625/54d8fca6/5b238a87N2d3b75f7.jpg!cr_1125x549_0_72"/> 
+  </swiper-item> 
+	<swiper-item>
+      	<image src="https://img1.360buyimg.com/da/jfs/t20914/99/1314535154/159509/98ab522a/5b25dcb9Nd368d8e4.jpg!cr_1125x549_0_72"/>
+  </swiper-item>
+</swiper>
+</view>
+<!--分类-->
+<view class='index_nav'>
+  <navigator class='nav_item' bindtap="a">
+    <image src='/images/nav0.png'></image>
+    <text>分类</text>
+  </navigator>
+  <navigator class='nav_item' bindtap="a">
+    <image src='/images/nav1.png'></image>
+    <text>包邮</text>
+  </navigator>
+  <navigator class='nav_item' bindtap="a">
+    <image src='/images/nav2.png'></image>
+    <text>购物车</text>
+  </navigator>
+  <navigator class='nav_item' bindtap="a">
+    <image src='/images/nav3.png'></image>
+    <text>我的</text>
+  </navigator>
+  <navigator class='nav_item' bindtap="a">
+    <image src='/images/nav4.png'></image>
+    <text>充值</text>
+  </navigator>
+  <navigator class='nav_item' bindtap="a">
+    <image src='/images/nav5.png'></image>
+    <text>优惠券</text>
+  </navigator>
+  <navigator class='nav_item' bindtap="a">
+    <image src='/images/nav6.png'></image>
+    <text>折扣</text>
+  </navigator>
+  <navigator class='nav_item' bindtap="a">
+    <image src='/images/nav7.png'></image>
+    <text>健康</text>
+  </navigator>
+</view>
+<view class='zb_tp'>
+<navigator>
+  <view class='zb_tp_1' bindtap="b">
+  <image src='http://img3.imgtn.bdimg.com/it/u=615152293,1077667112&fm=27&gp=0.jpg'></image>
+  <view class='zb_tp_2'>朕问你芒果怎么卖哒？</view>
+  </view>
+</navigator>
+<navigator class='zb_tp_3' bindtap="c">
+<text>穿越火线 刮刮奖现神秘惊喜！ 道具城白条上线！</text>
+<image src='http://img5.imgtn.bdimg.com/it/u=579477541,3039861694&fm=27&gp=0.jpg'></image>
+</navigator>
+<navigator class='zb_tp_3' bindtap="c">
+<text>穿越火线 刮刮奖现神秘惊喜！ 道具城白条上线！</text>
+<image src='http://img1.imgtn.bdimg.com/it/u=1647694873,753024156&fm=27&gp=0.jpg'></image>
+</navigator>
+<navigator class='zb_tp_3' bindtap="c">
+<text>穿越火线 刮刮奖现神秘惊喜！ 道具城白条上线！</text>
+<image src='http://img2.imgtn.bdimg.com/it/u=1606707426,193463240&fm=27&gp=0.jpg'></image>
+</navigator>
+<navigator class='zb_tp_3' bindtap="c">
+<text>穿越火线 刮刮奖现神秘惊喜！ 道具城白条上线！</text>
+<image src='http://img1.imgtn.bdimg.com/it/u=580107713,2532391232&fm=27&gp=0.jpg'></image>
+</navigator>
+</view>
